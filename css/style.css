@@ -42,11 +42,9 @@
     width: 100%;
   }
   main .table_part {
-   /*  background-color: rgb(184, 73, 73); */
     width: inherit;
   }
   main .user_part {
-    /* background-color: blue; */
     width: inherit;
   }
   table {
