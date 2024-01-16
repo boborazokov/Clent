@@ -6,7 +6,6 @@
 
 body {
   height: 100%;
-  overflow: hidden;
 }
 
 body {
@@ -24,7 +23,9 @@ header {
 }
 
 .logo img {
-  width: 350px;
+  width: 60px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .header_sort_part {
@@ -46,13 +47,13 @@ main {
   width: 100%;
 }
 
-main .table_part {
+/* main .table_part {
   width: inherit;
 }
 
 main .user_part {
   width: inherit;
-}
+} */
 
 table {
   width: 800px;
@@ -140,6 +141,7 @@ button{
   white-space: nowrap;
   will-change: box-shadow,transform;
   font-size: 18px;
+  margin-right: 30px;
 }
 
 button:focus {
