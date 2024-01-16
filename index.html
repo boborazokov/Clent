@@ -20,69 +20,85 @@
           <li>Addres</li>
           <li>Date</li>
         </ul>
-        <div class="add_button">
+        <div class="add_button" onclick="toggleForm()">
           <button>Add</button>
         </div>
       </header>
       <hr>
       <main>
         <div class="table_part"> <!-- Firdavs -->
-    <h1>Users List</h1>
-    <br>
-    <div class="teybl">
-      <table>
-        <thead>
-          <tr>
-            <td>№</td>
-            <td id="tableName">Name</td>
-            <td id="tableSurname">Surname</td>
-            <td id="tableAge">Age</td>
-            <td>Number</td>
-            <td>Address</td>
-            <td id="tableDate">Date</td>
-          </tr>
-        </thead>
-        <tbody id="res">
-          <tr>
-            <td>Cell 1</td>
-            <td>Cell 2</td>
-            <td>Cell 3</td>
-            <td>Cell 4</td>
-            <td>Cell 5</td>
-            <td>Cell 6</td>
-            <td>Cell 7</td>
-          </tr>
-          <tr>
-            <td>Cell 1</td>
-            <td>Cell 2</td>
-            <td>Cell 3</td>
-            <td>Cell 4</td>
-            <td>Cell 5</td>
-            <td>Cell 6</td>
-            <td>Cell 7</td>
-          </tr>
-          <tr>
-          <td>Cell 1</td>
-            <td>Cell 2</td>
-            <td>Cell 3</td>
-            <td>Cell 4</td>
-            <td>Cell 5</td>
-            <td>Cell 6</td>
-            <td>Cell 7</td>
-          </tr>
-          <tr>
-            <td>Cell 1</td>
-            <td>Cell 2</td>
-            <td>Cell 3</td>
-            <td>Cell 4</td>
-            <td>Cell 5</td>
-            <td>Cell 6</td>
-            <td>Cell 7</td>
-          </tr>
-        </tbody>
-      </table>
+            <h1>Users List</h1>
+            <br>
+            <div class="teybl">
+              <table>
+                <thead>
+                  <tr>
+                    <td>№</td>
+                    <td id="tableName">Name</td>
+                    <td id="tableSurname">Surname</td>
+                    <td id="tableAge">Age</td>
+                    <td>Number</td>
+                    <td>Address</td>
+                    <td id="tableDate">Date</td>
+                  </tr>
+                </thead>
+                <tbody id="res">
+                  <tr>
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                    <td>Cell 3</td>
+                    <td>Cell 4</td>
+                    <td>Cell 5</td>
+                    <td>Cell 6</td>
+                    <td>Cell 7</td>
+                  </tr>
+                  <tr>
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                    <td>Cell 3</td>
+                    <td>Cell 4</td>
+                    <td>Cell 5</td>
+                    <td>Cell 6</td>
+                    <td>Cell 7</td>
+                  </tr>
+                  <tr>
+                  <td>Cell 1</td>
+                    <td>Cell 2</td>
+                    <td>Cell 3</td>
+                    <td>Cell 4</td>
+                    <td>Cell 5</td>
+                    <td>Cell 6</td>
+                    <td>Cell 7</td>
+                  </tr>
+                  <tr>
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                    <td>Cell 3</td>
+                    <td>Cell 4</td>
+                    <td>Cell 5</td>
+                    <td>Cell 6</td>
+                    <td>Cell 7</td>
+                  </tr>
+                </tbody>
+              </table>
     </div>
+    <div class="user_part" id="userForm">
+      <!-- Input Form -->
+      <form id="addUserForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required>
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required>
+        <label for="gender">Gender:</label>
+        <input type="text" id="gender" name="gender" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+        </div>
       </main>
+
     <script src="js/script.js"></script>
 </body>
 </html>
