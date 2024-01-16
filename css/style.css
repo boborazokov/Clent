@@ -55,6 +55,16 @@ main .user_part {
   width: inherit;
 } */
 
+hr {
+  border:none;
+ 	width: 100%;
+	height: 60px;
+	margin-top: 0;
+	border-bottom: 1px solid blue;
+	box-shadow: 0 50px 50px -15px #334aae;
+  margin: -50px auto 10px; 
+}
+
 table {
   width: 800px;
   border-collapse: collapse;
