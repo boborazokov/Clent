@@ -74,6 +74,8 @@ th {
 
 thead td {
   background-color: #334aae;
+
+
   }
   tbody {
       tr {
@@ -142,25 +144,8 @@ button{
   will-change: box-shadow,transform;
   font-size: 18px;
   margin-right: 30px;
+
 }
-
-button:focus {
-  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-}
-
-button:hover {
-  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-  transform: translateY(-2px);
-}
-
-button:active {
-  box-shadow: #3c4fe0 0 3px 7px inset;
-  transform: translateY(2px);
-}
-  /*# sourceMappingURL=main.css.map */
-  
-
-
 
 tbody tr:hover {
   background-color: rgba(255, 255, 255, 0.3);
@@ -242,6 +227,5 @@ h1 {
   border-radius: 5px;
   cursor: pointer;
 }
-
 
 /*# sourceMappingURL=style.css.map */
