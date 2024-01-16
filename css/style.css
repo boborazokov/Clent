@@ -6,6 +6,7 @@
 
 body {
   height: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -156,8 +157,8 @@ button:active {
 }
   /*# sourceMappingURL=main.css.map */
   
-=======
-}
+
+
 
 tbody tr:hover {
   background-color: rgba(255, 255, 255, 0.3);
