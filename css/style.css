@@ -155,4 +155,10 @@ h1 {
   cursor: pointer;
 }
 
+.add_button button {
+  width: 60px;
+  height: 25px;
+  border: 1px solid #334aae;
+}
+
 /*# sourceMappingURL=style.css.map */
