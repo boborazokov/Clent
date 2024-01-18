@@ -237,5 +237,11 @@ h1 {
   border-radius: 5px;
   cursor: pointer;
 }
+label {
+  color: white;
+}
+.user_part{
+  margin-right: 30px;
+}
 
 /*# sourceMappingURL=style.css.map */
