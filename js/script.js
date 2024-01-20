@@ -6,13 +6,14 @@ const number = document.getElementById('number');
 const address = document.getElementById('address');
 const submit = document.getElementById('submit');
 const addUserForm = document.getElementById('addUserForm')
-const users = [
+const users = JSON.parse(localStorage.getItem('user')) ?? [
   {
     name: "Firdavs",
     surname: "Rustamov",
     age: 20,
     number: 915682148,
     addres: "Jizzax",
+    time: new Date().getTime()
   },
 
   {
@@ -21,6 +22,8 @@ const users = [
     age: 18,
     number: 905383057,
     addres: "Jizzax",
+    time: new Date().getTime()
+    
   },
 ]
 addUserForm.addEventListener('submit', function(e) {
@@ -40,7 +43,9 @@ addUserForm.addEventListener('submit', function(e) {
       surname: surname.value,
       age: age.value,
       number: number.value,
-      addres: address.value
+      addres: address.value,
+      time: new Date().getTime()
+
     });
     showresults(users);
     name.value = "";
@@ -50,7 +55,15 @@ addUserForm.addEventListener('submit', function(e) {
     address.value = "";
   }
 });
+function dateHandler(vaqt) {
+  var year = new Date(vaqt).getFullYear();
+  var month = new Date(vaqt).getMonth() +1;
+  var day = new Date(vaqt).getDate();
+  return `${day}.${month}.${year}`
+}
+
 function showresults(arr) {
+  localStorage.setItem('user', JSON.stringify(users));
   res.innerHTML = '';
   for (let i = 0; i < arr.length; i++) {
     const val = arr[i];
@@ -62,6 +75,8 @@ function showresults(arr) {
     <td>${val.age}</td>
     <td>${val.number}</td>
     <td>${val.addres}</td>
+    <td>${dateHandler(val.time)}</td>
+
     </tr>`;
   }
 }
